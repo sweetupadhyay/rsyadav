@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /private/
+Allow: /images/
+Sitemap: http://localhost:3000/sitemap/xml // Change the path to /sitemap/xml
+User-agent: Bingbot
+Disallow: /private/

@@ -1,0 +1,38 @@
+[
+  {
+    "image": "/images/patient1.png",
+    "quote": "Dr. Yadav is an exceptional cardiac surgeon. He saved my life!",
+    "name": "Ram Lal",
+    "city": "jaipur",
+    "designation": "Open Heart Surgery Patient"
+  },
+  {
+    "image": "/images/patient2.png",
+    "quote": "डॉ. यादव एक असाधारण कार्डियक सर्जन हैं। उन्होंने मेरी जान बचाई!",
+    "name": "Sube Singh",
+    "city": "Sikar",
+    "designation": "AVR Patient"
+  },
+  {
+    "image": "/images/patient2.png",
+    "quote": "The care I received was outstanding. Highly recommend Dr. Yadav!",
+    "name": "Jaya",
+    "city": "Hisar",
+    "designation": "Angioplasty Patient"
+  },
+  {
+    "image": "/images/patient2.png",
+    "quote": "डाॅक्टर साहब के यहां स्टाफ ने शुरू से अंत तक घर जैसी देखभाल की, डाॅक्टर साहब का स्वभाव बहुत अच्छा है।",
+    "name": "Kishori lal",
+    "city": "Ganga-Nagar",
+    "designation": "DVR Surgery Patient"
+  },
+  {
+    "image": "/images/patient1.png",
+    "quote": "Professional and compassionate care from start to finish.",
+    "name": "kailash",
+    "city": "Bikanair",
+    "designation": "Bypass Surgery Patient"
+  }
+  
+]

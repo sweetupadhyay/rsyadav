@@ -1,0 +1,64 @@
+<div class="container max-w-screen-2xl mx-auto px-4 md:px-20 mt-20">
+  <div class="text-center mx-auto mb-12 mx-w-[500px]">
+    <h5
+      class="inline-block text-[#13C5DD] uppercase border-b-4 text-xl font-bold"
+    >
+      MEDICAL PACKAGES
+    </h5>
+    <h1 class="text-4xl font-bold">Awesome Budget Friendly Medical Programs</h1>
+  </div>
+
+  <div
+    class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein"
+  >
+    <ul class="slider-container py-4">
+      <% for (const item of items) { %>
+
+      <li class="">
+        <div class="card shadow h-100">
+          <div class="ratio ratio-16x9">
+            <img
+              src="<%= item.image %>"
+              class="w-full h-48 object-cover rounded-t-lg"
+              loading="lazy"
+              alt="angioplasty"
+            />
+          </div>
+          <div class="card-body p-3 p-xl-5">
+            <h3 class="card-title h5"><%= item.title %></h3>
+            <p class="card-text"><%= item.slug %></p>
+            <div class="flex justify-between">
+              <a
+                href="#"
+                class="btn bg-[#13C5DD] text-white hover:bg-[#0F9EB1]"
+              >
+                <%= item.rs %>
+              </a>
+              <a
+                href="/blog"
+                class="btn bg-[#13C5DD] text-white hover:bg-[#0F9EB1]"
+                >Know More . . .</a
+              >
+            </div>
+          </div>
+        </div>
+      </li>
+      <% } %>
+    </ul>
+
+    <button type="button" class="slider-nav" aria-label="Go left"></button>
+    <button
+      type="button"
+      class="slider-nav slider-nav-next"
+      aria-label="Go left"
+    ></button>
+
+    <div class="slider-indicators">
+      <button class="" aria-label="Go to slide"></button>
+      <button aria-label="Go to slide" class=""></button>
+      <button aria-label="Go to slide" class=""></button>
+      <button aria-label="Go to slide" class="active"></button>
+      <button aria-label="Go to slide" class=""></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+<div class="flex flex-wrap justify-center">
+  <div class="w-full lg:w-3/5 mx-5 md:ml-16">
+    <article
+      class="prose lg:prose-xl mx-auto my-8 text-center md:text-left mt-20"
+    >
+      <img
+        src="<%= article.image %>"
+        alt="<%= article.title %>"
+        class="w-full lg:w-[750px] mb-4 rounded-lg shadow-md"
+      />
+      <h1 class="font-bold text-3xl mb-4"><%= article.title %></h1>
+
+      <% article.content.forEach(block => { %> <% if (block.type === 'h1') { %>
+      <% } else if (block.type === 'h2') { %>
+      <h2
+        class="font-semibold text-2xl my-3"
+        id="<%= block.text.toLowerCase().replace(/ /g, '-') %>"
+      >
+        <%= block.text %>
+      </h2>
+      <% } else if (block.type === 'h3') { %>
+      <h3
+        class="font-medium text-xl my-2"
+        id="<%= block.text.toLowerCase().replace(/ /g, '-') %>"
+      >
+        <%= block.text %>
+      </h3>
+      <% } else if (block.type === 'p') { %>
+      <p class="my-2"><%= block.text %></p>
+      <% } else if (block.type === 'ul') { %>
+      <ul class="list-disc list-inside my-2">
+        <% block.items.forEach(item => { %>
+        <li><%= item %></li>
+        <% }) %>
+      </ul>
+      <% } else if (block.type === 'toc') { %>
+      <nav class="my-4">
+        <ul class="list-disc list-inside">
+          <% block.items.forEach(item => { %>
+          <li>
+            <a href="#<%= item.anchor %>" class="text-blue-500 hover:underline"
+              ><%= item.title %></a
+            >
+          </li>
+          <% }) %>
+        </ul>
+      </nav>
+      <% } else if (block.type === 'faq') { %>
+      <section class="my-4" id="faqs">
+        <h2 class="font-semibold text-2xl mb-2">Frequently Asked Questions</h2>
+        <% block.questions.forEach(q => { %>
+        <div class="my-2">
+          <h3 class="font-medium text-xl"><%= q.question %></h3>
+          <p class="my-1"><%= q.answer %></p>
+        </div>
+        <% }) %>
+      </section>
+      <% } %> <% }) %>
+    </article>
+  </div>
+
+  <div class="w-full lg:w-1/4 mt-20 px-2">
+    <!-- Sidebar for related articles or navigation -->
+    <aside class="p-4 border-l border-gray-200 bg-gray-50 rounded-lg shadow-md">
+      <h3 class="font-bold text-xl mb-4">Related Articles</h3>
+      <ul class="list-none">
+        <!-- Add related articles dynamically if available -->
+        <% treatments.forEach(treatment => { %> <% if (treatment.id !==
+        article.id) { %>
+        <li class="mb-2">
+          <a
+            href="/treatment/<%= treatment.id %>"
+            class="block p-2 bg-white hover:bg-blue-100 rounded-lg shadow-sm transition"
+          >
+            <h4 class="text-lg font-medium text-gray-800">
+              <%= treatment.title %>
+            </h4>
+          </a>
+        </li>
+        <% } %> <% }) %>
+      </ul>
+
+      <!-- Contact Us Section -->
+      <div class="mt-8 p-4 bg-blue-100 rounded-lg shadow-md text-center">
+        <h3 class="text-xl font-bold mb-2">Need More Information?</h3>
+        <p class="mb-4 text-gray-700">
+          Contact us for more details about our treatments and services.
+        </p>
+        <img
+          src="/images/photo.jpg"
+          alt="Contact Us"
+          class="w-full h-[50rem] object-cover rounded-[19.375rem] mb-4"
+        />
+        <a
+          href="/contact"
+          class="bg-[#13C5DD] text-white px-4 py-2 rounded-lg shadow hover:bg-[#38a9b7de] transition"
+          >Contact Us</a
+        >
+      </div>
+    </aside>
+  </div>
+</div>
+<%- include('./includes/testimonial') %>

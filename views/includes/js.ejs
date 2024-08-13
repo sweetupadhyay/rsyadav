@@ -1,0 +1,56 @@
+<!--header js-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentLocation = location.pathname;
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+    menuLinks.forEach((link) => {
+      if (link.getAttribute("href") === currentLocation) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+<!--whatsApp javascript-->
+<script
+  async
+  src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"
+></script>
+<script>
+  var wa_btnSetting = {
+    btnColor: "#16BE45",
+    ctaText: "WhatsApp Us",
+    cornerRadius: 40,
+    marginBottom: 105,
+    marginLeft: 20,
+    marginRight: 20,
+    btnPosition: "right",
+    whatsAppNumber: "9829175031",
+    welcomeMessage: "Hi, My Query about...",
+    zIndex: 999999,
+    btnColorScheme: "light",
+  };
+  window.onload = () => {
+    _waEmbed(wa_btnSetting);
+  };
+</script>
+<!--service page  javascript-->
+<script>
+  const links = document.querySelectorAll(".flex a");
+  const content = document.getElementById("content").querySelectorAll("p");
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default link behavior
+
+      links.forEach((l) =>
+        l.classList.remove("active", "text-white", "bg-[#13C5DD]")
+      );
+      link.classList.add("active", "text-white", "bg-[#13C5DD]");
+
+      content.forEach((p) => p.classList.add("hidden"));
+      const clickedIndex = Array.from(links).indexOf(link);
+      content[clickedIndex].classList.remove("hidden");
+    });
+  });
+</script>

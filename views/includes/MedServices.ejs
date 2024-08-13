@@ -1,0 +1,32 @@
+<div class="container max-w-screen-2xl mx-auto px-4 md:px-20 mt-10">
+  <div class="container">
+    <div class="text-center mx-auto mb-12 mx-w-[500px]">
+      <h5
+        class="inline-block text-[#13C5DD] uppercase border-b-4 text-xl font-bold"
+      >
+        Services
+      </h5>
+      <h1 class="text-6xl font-bold">Excellent Medical Services</h1>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <% for (const item of items) { %>
+      <div
+        class="card bg-base-100 w-92 shadow-xl mx-5 my-2 hover:scale-105 duration-300"
+      >
+        <div class="card-body">
+          <h2 class="card-title"><%= item.title %></h2>
+          <p><%= item.slug %></p>
+          <div class="card-actions justify-end">
+            <a
+              href="/service"
+              class="btn bg-[#13C5DD] text-white hover:bg-[#0F9EB1]"
+            >
+              Know More...
+            </a>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<section class="bg-[#13C5DD] text-white text-center py-16 mt-20">
+  <h1 class="text-4xl font-bold">Welcome to Our Treatment Section</h1>
+  <p class="mt-4">
+    Stay updated with the latest insights and tips on cardiac health.
+  </p>
+</section>
+<div class="container mx-auto px-4 py-8 my-2">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <% for (const post of treatments) { %>
+    <div
+      class="card rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+    >
+      <img
+        src="<%= post.image %>"
+        alt="<%= post.title %> image"
+        class="w-full h-48 object-cover rounded-t-lg"
+      />
+      <div class="card-body p-6">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">
+          <%= post.title %>
+        </h3>
+        <p class="text-gray-600 mb-4"><%= post.summary %></p>
+        <a
+          href="/treatment/<%= post.id %>"
+          class="text-blue-500 hover:text-blue-700 font-medium"
+          >Read More</a
+        >
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>

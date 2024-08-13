@@ -1,0 +1,51 @@
+[
+ {
+  "id":"1",
+  "title": "Angiography",
+  "image": "/images/angio.png",
+  "slug": "A coronary angiogram is a test to find out the blockage of arteries",
+  "URL":"/service",
+  "rs":"₹ 80,000"
+ },
+
+{"id":"2",
+  "title": "Angioplasty",
+  "image": "/images/angioplasty.png",
+  "slug": "A coronary angiogram is a test to find out the blockage of arteries",
+  "summary": "/treatments",
+  "rs":"₹ xx,xxx"
+},
+
+{
+  "id":"3",
+  "title": "Double Valve Replacement (DVR)",
+  "image": "/images/DVR.png",
+  "slug": "A coronary angiogram is a test to find out the blockage of arteries",
+  "rs":"₹ xx,xxx"
+},
+
+{
+   "id":"4",
+  "title": "Aortic Valve Replacement (AVR)",
+  "image": "/images/valve.png",
+  "slug": "A coronary angiogram is a test to find out the blockage of arteries",
+  "rs":"₹ xx,xxx"
+},
+          
+{
+   "id":"5",
+  "title": "Coronary artery bypass grafting (CABG)",
+  "image": "/images/CABG.png",
+  "slug": "A coronary angiogram is a test to find out the blockage of arteries",
+  "rs":"₹ xx,xxx"
+},
+
+{
+  "id":"6",
+ "title": "Pacemaker",
+ "image": "/images/pacemaker.png",
+ "slug": "A coronary angiogram is a test to find out the blockage of arteries",
+ "rs":"₹ xx,xxx"
+}
+
+]
