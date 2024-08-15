@@ -22,189 +22,183 @@
   </div>
 </div>
 <!-- Hero End -->
-<!--services start-->
-<div
-  class="container max-w-screen-2xl px-4 md:px-20 mx-auto relative z-10 md:top-[-2rem] mt-5 md:mt-0"
->
-  <div
-    class="grid grid-cols-2 md:grid-cols-4 font-semibold gap-[10px] items-center text-center justify-center mx-4"
-  >
-    <div
-      class="border rounded-lg shadow py-3 px-5 md:py-5 mx-0 bg-[#13C5DD] text-white hover:scale-105 duration-300"
-    >
-      <a href="#">We Truly Care</a>
+<div class="container mx-auto px-4 md:px-8 lg:px-16 relative z-10 md:top-[-2rem] mt-5 md:mt-0">
+  <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4 items-center text-center justify-center">
+    <div class="bg-[#13C5DD] text-white rounded-lg shadow-md p-4 hover:scale-105 duration-300">
+      <a href="/service">Expert in Cardiac Surgery</a>
     </div>
-    <div
-      class="border rounded-lg shadow mx-0 py-[14px] md:py-5 bg-[#13C5DD] text-white hover:scale-105 duration-300"
-    >
-      <a href="#">Modern Equipments</a>
+    <div class="bg-[#13C5DD] text-white rounded-lg shadow-md p-4 hover:scale-105 duration-300">
+      <a href="/about">Dedicated Cardiac Care</a>
     </div>
-    <div
-      class="border rounded-lg shadow px-4 mx-0 md:py-5 bg-[#13C5DD] text-white hover:scale-105 duration-300"
-    >
-      <a href="#">Highly Trained Staffs</a>
+    <div class="bg-[#13C5DD] text-white rounded-lg shadow-md p-4 hover:scale-105 duration-300">
+      <a href="/contact">Schedule a Consultation</a>
     </div>
-    <div
-      class="border rounded-lg shadow px-1 md:py-5 mx-0 bg-[#13C5DD] text-white hover:scale-105 duration-300"
-    >
-      <a href="#">Fast And Accurate Results</a>
+    <div class="bg-[#13C5DD] text-white rounded-lg shadow-md p-4 hover:scale-105 duration-300">
+      <a href="/treatment">Treating Heart Conditions</a>
     </div>
   </div>
 </div>
+    <!-- treatment Start -->
+    <%- include('./includes/MedServices') %>
+    <!-- treatment End -->
+    <!-- About Start -->
+    <div class="container max-w-screen-2xl px-4 md:px-20 mx-auto mt-10">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="mb-12 lg:mb-0">
+            <div class="relative h-full">
+              <img
+                class="absolute w-full h-full rounded-lg object-cover shadow ml-1"
+                src="/images/about.jpg"
+                alt="Medical services by Dr. Ram Singh Yadav "
+              />
+            </div>
+          </div>
+          <div class="ml-8 bg-gradient-to-br from-sky-500 to-teal-400 pl-5">
+            <div class="mb-6">
+              <h5
+                class="inline-block text-[#13C5DD] uppercase border-b-4 text-xl font-bold"
+              >
+                About Us
+              </h5>
+              <h1 class="text-5xl font-bold text-white">
+                Best Cardiac Care For Yourself and Your Family
+              </h1>
+            </div>
+            <p class="text-inherit text-lg">
+              Ensuring top-notch cardiac care for yourself and your family is
+              crucial. Dr. Ram Singh Yadav, a leading cardiac surgeon in India,
+              offers unparalleled expertise in heart health. With thousands of
+              successful surgeries and one of the highest success rates in the
+              field, Dr. Yadav provides exceptional care. His practice at Jaipur
+              Hospital is equipped with state-of-the-art technology and a
+              compassionate team, ensuring comprehensive and personalized
+              cardiac care for all patients. Choose the best for your heart
+              health.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 my-10">
+              <div class="w-5/8 md:3/8 font-bold">
+                <div
+                  class="bg-[#EFF5F9] text-center rounded-full py-4 px-1 lg:py-4"
+                >
+                  <img
+                    src="/images/doctor.svg"
+                    alt="ram singh yadav"
+                    class="w-12 mb-4 mx-auto"
+                  />
+                  <h6 class="mb-0">
+                    Senior<small class="block text-[#13C5DD]">Comsultant</small>
+                  </h6>
+                </div>
+              </div>
 
-<!--services End-->
-<!-- treatment Start -->
-<%- include('./includes/MedServices') %>
-<!-- treatment End -->
-<!-- About Start -->
-<div class="container max-w-screen-2xl px-4 md:px-20 mx-auto mt-10">
-  <div class="container">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
-      <div class="mb-12 lg:mb-0">
-        <div class="relative h-full">
-          <img
-            class="absolute w-full h-full rounded-lg object-cover shadow ml-1"
-            src="/images/about.jpg"
-            alt="Medical services by Dr. Ram Singh Yadav "
-          />
+              <div class="w-5/8 md:3/8 font-bold">
+                <div class="bg-[#EFF5F9] text-center rounded-full py-4 lg:py-4">
+                  <img
+                    src="/images/staff.svg"
+                    alt=""
+                    class="w-12 mb-4 mx-auto"
+                  />
+                  <h6 class="mb-0">
+                    Exprienced<small class="block text-[#13C5DD]"
+                      >Nurshing Staff</small
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="w-5/8 md:3/8 font-bold">
+                <div class="bg-[#EFF5F9] text-center rounded-full py-4 lg:py-4">
+                  <img
+                    src="/images/lab.svg"
+                    alt="cath lab"
+                    class="w-12 mb-4 mx-auto"
+                  />
+                  <h6 class="mb-0">
+                    High Tech<small class="block text-[#13C5DD]"
+                      >Cath Lab</small
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="w-5/8 md:3/8 font-bold">
+                <div class="bg-[#EFF5F9] text-center rounded-full py-4 lg:py-4">
+                  <img
+                    src="/images/care.svg"
+                    alt="cardiac care"
+                    class="w-12 mb-4 mx-auto"
+                  />
+                  <h6 class="mb-0">
+                    Personalised<small class="block text-[#13C5DD]">Care</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="ml-8 bg-gradient-to-br from-sky-500 to-teal-400 pl-5">
-        <div class="mb-6">
-          <h5
+    </div>
+    <!-- About End -->
+    <!--Medical Programmes-->
+    <%- include('./includes/MedProg') %>
+    <!--Medical Programmes End-->
+    <!--tpa start-->
+    <%- include('./includes/tpa') %>
+    <!--testimonial Start-->
+    <%- include('./includes/testimonial') %>
+    <!--contact us start-->
+    <div class="container max-w-screen-2xl px-4 md:px-20 mx-auto mt-20">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="">
+          <h2
             class="inline-block text-[#13C5DD] uppercase border-b-4 text-xl font-bold"
           >
-            About Us
-          </h5>
-          <h1 class="text-5xl font-bold text-white">
-            Best Cardiac Care For Yourself and Your Family
-          </h1>
-        </div>
-        <p class="text-inherit text-lg">
-          Ensuring top-notch cardiac care for yourself and your family is
-          crucial. Dr. Ram Singh Yadav, a leading cardiac surgeon in India,
-          offers unparalleled expertise in heart health. With thousands of
-          successful surgeries and one of the highest success rates in the
-          field, Dr. Yadav provides exceptional care. His practice at Jaipur
-          Hospital is equipped with state-of-the-art technology and a
-          compassionate team, ensuring comprehensive and personalized cardiac
-          care for all patients. Choose the best for your heart health.
-        </p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 my-10">
-          <div class="w-5/8 md:3/8 font-bold">
-            <div
-              class="bg-[#EFF5F9] text-center rounded-full py-4 px-1 lg:py-4"
+            Contact Us
+          </h2>
+
+          <p class="text-left my-8 font-medium text-inherit mt-20">
+            <a href="tel:+919829175031">Call Us: +91-9829175031</a>
+            <br /><br />
+            Email: xyz@gmail.com<br />
+            <br />Address: JAIPUR HOSPITAL, Tonk Rd, Near SMS STADIUM<br />
+            Jaipur Nagar Nigam, Lalkothi, Jaipur [Rajasthan]<br />
+            <br />Working Hours: Mon-Sat: 11am-4pm<br /><span
+              class="text-red-500 text-center"
+              >*Sunday off</span
             >
-              <img
-                src="/images/doctor.svg"
-                alt="ram singh yadav"
-                class="w-12 mb-4 mx-auto"
-              />
-              <h6 class="mb-0">
-                Senior<small class="block text-[#13C5DD]">Comsultant</small>
-              </h6>
+          </p>
+        </div>
+        <!--map-->
+        <div class="row">
+          <div class="col-12" style="height: 500px">
+            <div class="position-relative h-100">
+              <div class="sm:block md:hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.349590092192!2d75.80207067386013!3d26.89239816096616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db420e65e5acb%3A0x2b5b8e5dec74b037!2sJaipur%20Hospital!5e0!3m2!1sen!2sin!4v1720032603687!5m2!1sen!2sin"
+                  width="300"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
-          </div>
-
-          <div class="w-5/8 md:3/8 font-bold">
-            <div class="bg-[#EFF5F9] text-center rounded-full py-4 lg:py-4">
-              <img src="/images/staff.svg" alt="" class="w-12 mb-4 mx-auto" />
-              <h6 class="mb-0">
-                Exprienced<small class="block text-[#13C5DD]"
-                  >Nurshing Staff</small
-                >
-              </h6>
-            </div>
-          </div>
-          <div class="w-5/8 md:3/8 font-bold">
-            <div class="bg-[#EFF5F9] text-center rounded-full py-4 lg:py-4">
-              <img
-                src="/images/lab.svg"
-                alt="cath lab"
-                class="w-12 mb-4 mx-auto"
-              />
-              <h6 class="mb-0">
-                High Tech<small class="block text-[#13C5DD]">Cath Lab</small>
-              </h6>
-            </div>
-          </div>
-          <div class="w-5/8 md:3/8 font-bold">
-            <div class="bg-[#EFF5F9] text-center rounded-full py-4 lg:py-4">
-              <img
-                src="/images/care.svg"
-                alt="cardiac care"
-                class="w-12 mb-4 mx-auto"
-              />
-              <h6 class="mb-0">
-                Personalised<small class="block text-[#13C5DD]">Care</small>
-              </h6>
+            <div class="hidden md:block">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.349590092192!2d75.80207067386013!3d26.89239816096616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db420e65e5acb%3A0x2b5b8e5dec74b037!2sJaipur%20Hospital!5e0!3m2!1sen!2sin!4v1720032603687!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
+        <!--map end-->
       </div>
     </div>
+    <!--contact us end-->
   </div>
 </div>
-<!-- About End -->
-<!--Medical Programmes-->
-<%- include('./includes/MedProg') %>
-<!--Medical Programmes End-->
-<!--tpa start-->
-<%- include('./includes/tpa') %>
-<!--testimonial Start-->
-<%- include('./includes/testimonial') %>
-<!--contact us start-->
-<div class="container max-w-screen-2xl px-4 md:px-20 mx-auto mt-20">
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div class="">
-      <h2
-        class="inline-block text-[#13C5DD] uppercase border-b-4 text-xl font-bold"
-      >
-        Contact Us
-      </h2>
-
-      <p class="text-left my-8 font-medium text-inherit mt-20">
-        <a href="tel:+919829175031">Call Us: +91-9829175031</a>
-        <br /><br />
-        Email: xyz@gmail.com<br />
-        <br />Address: JAIPUR HOSPITAL, Tonk Rd, Near SMS STADIUM<br />
-        Jaipur Nagar Nigam, Lalkothi, Jaipur [Rajasthan]<br />
-        <br />Working Hours: Mon-Sat: 11am-4pm<br /><span
-          class="text-red-500 text-center"
-          >*Sunday off</span
-        >
-      </p>
-    </div>
-    <!--map-->
-    <div class="row">
-      <div class="col-12" style="height: 500px">
-        <div class="position-relative h-100">
-          <div class="sm:block md:hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.349590092192!2d75.80207067386013!3d26.89239816096616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db420e65e5acb%3A0x2b5b8e5dec74b037!2sJaipur%20Hospital!5e0!3m2!1sen!2sin!4v1720032603687!5m2!1sen!2sin"
-              width="300"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div class="hidden md:block">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.349590092192!2d75.80207067386013!3d26.89239816096616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db420e65e5acb%3A0x2b5b8e5dec74b037!2sJaipur%20Hospital!5e0!3m2!1sen!2sin!4v1720032603687!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <!--map end-->
-  </div>
-</div>
-<!--contact us end-->
