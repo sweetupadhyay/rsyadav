@@ -823,7 +823,154 @@
             "text": "Aortic valve replacement is a significant procedure with the potential to dramatically improve the quality of life for patients with severe aortic valve conditions. Understanding the types, indications, procedure, and postoperative care can help patients and caregivers make informed decisions. Regular follow-ups and a healthy lifestyle are crucial for long-term success."
         }
     ]
-  }
+  },
 
-  
+  {
+    "id": "Coronary Angioplasty: A Quick Guidence",
+    "title": "Coronary Angioplasty: A Quick Guidence",
+    "card": "Coronary Angioplasty Procedure",
+    "image": "/images/coronary-angioplasty.png", 
+    "slug": "coronary-angioplasty",
+    "summary": "Learn about Coronary angioplasty in Hindi",
+    "keywords": [
+      "Coronary Angioplasty",
+      "stent placement",
+      "angioplasty procedure",
+      "balloon angioplasty",
+      "angioplasty risk",
+      "angioplasty benefits",
+      "angioplasty aftercare"
+    ],
+    "content": [
+      {
+        "type": "h1",
+        "text": "एंजियोप्लास्टी|Coronary Angioplasty: एक संपूर्ण मार्गदर्शिका"
+      },
+      {
+        "type": "p",
+        "text": "एंजियोप्लास्टी, जिसे पीटीसीए (Percutaneous Transluminal Coronary Angioplasty) भी कहा जाता है, एक ऐसी चिकित्सा प्रक्रिया है जिसका उपयोग संकुचित या अवरुद्ध धमनियों को खोलने के लिए किया जाता है। यह प्रक्रिया मुख्य रूप से हृदय की धमनियों को खुला रखने और रक्त प्रवाह को सामान्य बनाने के लिए की जाती है, जिससे दिल का दौरा पड़ने का खतरा कम हो जाता है। इस लेख में, हम एंजियोप्लास्टी के विभिन्न पहलुओं पर चर्चा करेंगे, जैसे कि इसके लाभ, प्रक्रिया, जोखिम और पुनर्वास।"      },
+      {
+        "type": "toc",
+        "items": [
+          { "title": "Coronary Angioplasty|एंजियोप्लास्टी क्या है?", "anchor": "#coronary-angioplasty" },
+          { "title": "Angioplasty procedure steps|प्रक्रिया कैसे होती है?", "anchor": "#angioplasty-procedure-steps" },
+          { "title": "एंजियोप्लास्टी के लाभ|angioplasty benefits", "anchor": "#angioplasty-benefits" },
+          { "title": "Coronary angioplasty recovery time", "anchor": "#Coronary-angioplasty-recovery-time" },
+          { "title": "Angioplasty risks", "anchor": "#Angioplasty-risks" },
+          { "title": "एंजियोप्लास्टी के बाद पुनर्वास|angioplasty aftercare", "anchor": "#angioplasty-aftercare" }
+          
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Coronary Angioplasty|एंजियोप्लास्टी क्या है?",
+        "anchor": "coronary-angioplasty"
+      },
+      {
+        "type": "p",
+        "text": "एंजियोप्लास्टी|coronary angioplasty एक गैर-सर्जिकल प्रक्रिया है, जिसमें धमनियों में संकुचन या अवरोध को दूर करने के लिए एक पतली ट्यूब (कैथेटर) का उपयोग किया जाता है। यह प्रक्रिया आमतौर पर उन रोगियों के लिए की जाती है जिन्हें कोरोनरी आर्टरी डिजीज (CAD) है, जिसमें धमनियों में प्लाक (चर्बी, कोलेस्ट्रॉल, कैल्शियम आदि का जमा होना) के कारण संकुचन हो जाता है"
+      },
+      {"type": "h2",
+        "text": "Angioplasty procedure steps|प्रक्रिया कैसे होती है?  ",
+        "anchor": "angioplasty-procedure-steps"
+        
+      },
+      {
+        "type": "p",
+        "text": "angioplasty procedure: मरीज को पहले एनेस्थीसिया दिया जाता है ताकि प्रक्रिया के दौरान कोई दर्द या असुविधा महसूस न हो। फिर एक छोटे चीरे के माध्यम से कैथेटर को धमनियों में डाला जाता है, आमतौर पर यह चीरा हाथ या पैर की नस में किया जाता है।"  },
+        {
+          "type":"p",
+          "text":"कैथेटर का मार्गदर्शन: कैथेटर को एक्स-रे गाइडेंस के साथ धीरे-धीरे संकुचित धमनियों की ओर बढ़ाया जाता है।"
+        },
+
+  {"type":"p",
+  "text": "Balloon angioplasty|बलून का प्रयोग: एक बार कैथेटर सही स्थान पर पहुंच जाता है, उसके अंत में लगे छोटे बलून को फुलाया जाता है, जिससे धमनियों में जमा प्लाक को दबा कर धमनियों को चौड़ा किया जाता है।" },
+{"type": "p",
+"text":"stent placement|स्टेंट का उपयोग: कई मामलों में, बलून को फुलाने के बाद वहां एक स्टेंट (धातु का जालीदार फ्रेम) लगाया जाता है, जिससे धमनी खुली रहे और दोबारा संकुचन न हो।"},
+  {"type": "p",
+  "text":"प्रक्रिया का अंत: स्टेंट लगाने के बाद कैथेटर और बलून को बाहर निकाल लिया जाता है और चीरे को बंद कर दिया जाता है। "
+},
+{
+  "type": "h2",
+  "text": "एंजियोप्लास्टी के लाभ|angioplasty benefits",
+  "anchor": "angioplasty-benefits"
+},
+{
+  "type":"p",
+  "text":"दिल के दौरे की स्थिति में तुरंत राहत देती है और रक्त प्रवाह को सामान्य कर देती है।"
+},
+{
+  "type":"p",
+  "text":"coronary angioplasty, दिल के दौरे की स्थिति में तुरंत राहत देती है और रक्त प्रवाह को सामान्य कर देती है।"
+},
+{
+  "type": "h2",
+  "text": "Coronary angioplasty recovery time",
+  "anchor": "Coronary-angioplasty-recovery-time"
+},
+{
+  "type":"p",
+  "text":"सर्जिकल प्रक्रियाओं की तुलना में एंजियोप्लास्टी का रिकवरी समय काफी कम होता है, और मरीज आमतौर पर कुछ दिनों में अपनी सामान्य गतिविधियों में लौट सकते हैं।  "
+},
+{
+  "type":"p",
+  "text":"लंबे समय तक प्रभाव: स्टेंट की मदद से धमनी को खुला रखने में मदद मिलती है, जिससे लंबे समय तक दिल की समस्याओं से बचा जा सकता है।    "
+},
+{
+  "type": "h2",
+  "text": "Angioplasty risks",
+  "anchor": "Angioplasty-risks"
+},
+{
+  "type":"p",
+  "text":"हालांकि एंजियोप्लास्टी एक सुरक्षित प्रक्रिया मानी जाती है, फिर भी कुछ angioplasty risks हो सकते हैं, "
+},
+{
+  "type":"p",
+  "text":"धमनी का पुनः संकुचन: कुछ मामलों में, स्टेंट लगाए जाने के बाद भी धमनी फिर से संकुचित हो सकती है।   "
+},
+{
+  "type":"p",
+  "text":"रक्तस्राव: चीरे वाली जगह से खून बहने का खतरा रहता है।    "
+},
+{
+  "type":"p",
+  "text":"संक्रमण: प्रक्रिया के दौरान या बाद में संक्रमण हो सकता है।      "
+},
+{
+  "type":"h2",
+  "text":"एंजियोप्लास्टी के बाद पुनर्वास|angioplasty aftercare",
+  "anchor": "angioplasty-aftercare"
+},
+{
+  "type":"p",
+  "text":"एंजियोप्लास्टी के बाद, मरीजों को एक स्वस्थ जीवनशैली अपनाने की सलाह दी जाती है। angioplasty aftercare में निम्नलिखित शामिल हैं:"
+},
+{
+  "type":"p",
+  "text":"आहार में सुधार: संतुलित और कम वसा वाला आहार अपनाएं।  "
+},
+{
+  "type":"p",
+  "text":"व्यायाम: नियमित शारीरिक गतिविधियों को शामिल करें।  "
+},
+{
+  "type":"p",
+  "text":"धूम्रपान और शराब से बचाव: ये आदतें धमनियों में दोबारा संकुचन का कारण बन सकती हैं।    "
+},
+{
+  "type":"p",
+  "text":"दवाओं का सेवन: डॉक्टर द्वारा निर्धारित दवाओं का नियमित सेवन करें।     "
+},
+{
+  "type":"h2",
+  "text":"निष्कर्ष    "
+},
+{
+  "type":"p",
+  "text":"Angioplasty  हृदय रोगियों के लिए एक महत्वपूर्ण और प्रभावी चिकित्सा प्रक्रिया है, जो दिल की धमनियों को खुला रखने और दिल के दौरे से बचाव करने में सहायक होती है। हालांकि इसके कुछ जोखिम हो सकते हैं, लेकिन सही देखभाल और जीवनशैली में बदलाव के साथ इसे सफलतापूर्वक अपनाया जा सकता है। यदि आप या आपके परिवार में किसी को हृदय संबंधी समस्याएं हैं, तो Angioplasty के विकल्प के बारे में डॉक्टर से परामर्श अवश्य करें।  "
+}
 ]
+  }
+]
+  
