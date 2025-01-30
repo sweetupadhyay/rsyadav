@@ -7,6 +7,7 @@
         src="<%= article.image %>"
         alt="<%= article.title %>"
         class="w-full lg:w-[750px] mb-4 rounded-lg shadow-md"
+        loading="lazy"
       />
       <h1 class="font-bold text-3xl mb-4"><%= article.title %></h1>
 
@@ -14,49 +15,59 @@
       <% } else if (block.type === 'h2') { %>
       <h2
         class="font-semibold text-2xl my-3"
-        id="<%= block.text.toLowerCase().replace(/ /g, '-') %>"
+        id="<%= block.text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '') %>"
       >
         <%= block.text %>
       </h2>
       <% } else if (block.type === 'h3') { %>
       <h3
         class="font-medium text-xl my-2"
-        id="<%= block.text.toLowerCase().replace(/ /g, '-') %>"
+        id="<%= block.text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '') %>"
       >
         <%= block.text %>
       </h3>
       <% } else if (block.type === 'p') { %>
-      <p class="my-2"><%= block.text %></p>
+      <p class="my-2 leading-relaxed text-gray-700"><%= block.text %></p>
       <% } else if (block.type === 'ul') { %>
-      <ul class="list-disc list-inside my-2">
+      <ul class="list-disc list-inside my-2 text-gray-700">
         <% block.items.forEach(item => { %>
         <li><%= item %></li>
         <% }) %>
       </ul>
       <% } else if (block.type === 'toc') { %>
-      <nav class="my-4">
+      <nav class="my-4 bg-gray-100 p-4 rounded-lg">
+        <h2 class="font-semibold text-xl mb-2">Table of Contents</h2>
         <ul class="list-disc list-inside">
           <% block.items.forEach(item => { %>
           <li>
-            <a href="#<%= item.anchor %>" class="text-blue-500 hover:underline"
-              ><%= item.title %></a
+            <a
+              href="#<%= item.anchor.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '') %>"
+              class="text-blue-500 hover:underline"
             >
+              <%= item.title %>
+            </a>
           </li>
           <% }) %>
         </ul>
       </nav>
-      <% } else if (block.type === 'faq') { %>
-      <section class="my-4" id="faqs">
-        <h2 class="font-semibold text-2xl mb-2">Frequently Asked Questions</h2>
-        <% block.questions.forEach(q => { %>
-        <div class="my-2">
-          <h3 class="font-medium text-xl"><%= q.question %></h3>
-          <p class="my-1"><%= q.answer %></p>
-        </div>
-        <% }) %>
-      </section>
       <% } %> <% }) %>
     </article>
+
+    <!-- FAQ Section -->
+    <section
+      class="my-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md"
+    >
+      <h2 class="font-semibold text-2xl mb-4 text-center text-blue-600">
+        Frequently Asked Questions
+      </h2>
+      <% article.content.forEach(block => { %> <% if (block.type === 'faq') { %>
+      <% block.questions.forEach(q => { %>
+      <div class="my-4">
+        <h3 class="font-medium text-xl text-gray-800"><%= q.question %></h3>
+        <p class="my-2 text-gray-700"><%= q.answer %></p>
+      </div>
+      <% }) %> <% } %> <% }) %>
+    </section>
   </div>
 
   <div class="w-full lg:w-1/4 mt-20 px-2">
@@ -64,7 +75,6 @@
     <aside class="p-4 border-l border-gray-200 bg-gray-50 rounded-lg shadow-md">
       <h3 class="font-bold text-xl mb-4">Related Articles</h3>
       <ul class="list-none">
-        <!-- Add related articles dynamically if available -->
         <% treatments.forEach(treatment => { %> <% if (treatment.id !==
         article.id) { %>
         <li class="mb-2">
@@ -89,13 +99,15 @@
         <img
           src="/images/photo.jpg"
           alt="Contact Us"
-          class="w-full h-[50rem] object-cover rounded-[19.375rem] mb-4"
+          class="w-full h-40 object-cover rounded-lg mb-4"
+          loading="lazy"
         />
         <a
           href="/contact"
           class="bg-[#13C5DD] text-white px-4 py-2 rounded-lg shadow hover:bg-[#38a9b7de] transition"
-          >Contact Us</a
         >
+          Contact Us
+        </a>
       </div>
     </aside>
   </div>
